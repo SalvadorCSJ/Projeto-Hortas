@@ -10,9 +10,9 @@ as pessoas que são membros de alguma horta comunitária da cidade e o público 
 Salvador Cândido da Silva Júnior (Fullstack developer)
 
 # Tecnologias
-- Frontend:
-- Backend:
-- Database:
+- Frontend: HTTML, CSS
+- Backend: Django/Python
+- Database: SQLite
 
 # Backlog das Histórias
 - Como usuário, eu gostaria de ter uma conta para acessar a plataforma.
