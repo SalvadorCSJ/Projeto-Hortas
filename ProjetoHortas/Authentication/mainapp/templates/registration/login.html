@@ -9,7 +9,7 @@
 </p>
 {% else %}
 <p>
-    Please, use the following form to log in:
+    Please, use the following form to log in. If you don't have an account yet, please <a href="{% url 'register' %}">register here</a>.
 </p>
 {% endif %}
 <div class="login-form">
@@ -22,7 +22,7 @@
         </p>
     </form>
     <p>
-        <a href="#">
+        <a href="{% url 'password_reset' %}">
             Forgot your password?
         </a>
     </p>
