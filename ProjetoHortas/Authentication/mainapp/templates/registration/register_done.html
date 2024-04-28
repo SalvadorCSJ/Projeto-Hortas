@@ -3,7 +3,9 @@
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-    <h1>Welcome {{new_user.first_name}}!</h1>
-    <p>Your account has been successfully created. You can now <a href="{% url 'login' %}">log in</a>.
-    </p>
+<div class="center-content">
+    <h1>Seja bem-vindo(a) {{new_user.first_name}}!</h1>
+    <p>Sua conta foi criada com sucesso. Você pode logar clicando no botão abaixo:</p>
+    <a href="{% url 'login' %}" class="login-button">Entrar</a>.
+</div>
 {% endblock %}

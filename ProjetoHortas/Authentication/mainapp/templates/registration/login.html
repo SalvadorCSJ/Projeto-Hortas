@@ -2,29 +2,30 @@
 {% block title %}Login{% endblock %}
 
 {% block content %}
-<h1>Log in</h1>
-{% if form.errors %}
-<p>
-    Please, check your username and password
-</p>
-{% else %}
-<p>
-    Please, use the following form to log in. If you don't have an account yet, please <a href="{% url 'register' %}">register here</a>.
-</p>
-{% endif %}
-<div class="login-form">
-    <form action="{% url 'login' %}" method="post">
-        {{ form.as_p }}
-        {% csrf_token %}
-        <input type="hidden" name="next" value="{{ next }}">
-        <p>
-            <input type="submit" value="Log-in">
-        </p>
-    </form>
+<div class="login-container">
+    <h1>Log in</h1>
+    {% if form.errors %}
     <p>
-        <a href="{% url 'password_reset' %}">
-            Forgot your password?
-        </a>
+        Por favor confirme se o seu nome de usuário e senha estão corretos.
     </p>
+    {% else %}
+    
+    {% endif %}
+    <div class="login-form">
+        <form action="{% url 'login' %}" method="post">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ next }}">
+            <p>
+                <button type="submit" class="btn">Entrar</button>
+            </p>
+        </form>
+        <p>
+            <a href="{% url 'password_reset' %}" class="btn">
+                Esqueceu a sua senha?
+            </a>
+            <a href="{% url 'register' %}" class="btn">Cadastre-se aqui</a>.
+        </p>
+    </div>
 </div>
 {% endblock %}

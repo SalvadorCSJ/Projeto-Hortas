@@ -1,9 +1,22 @@
 {% extends "base.html" %}
 {% block title %}Dashboard{% endblock %}
 {% block content %}
-    <h1>Dashboard</h1>
-    Hello, {{ request.user.username }}!
-    <p>Welcome to your page</p>
-    <p>You can change your password <a href="{% url 'password_change' %}">here</a></p>
-    <a href="{% url 'logout' %}">logout</a>
+    <div class="dashboard-content">
+        Olá, {{ request.user.username }}!
+        <p>Seja bem-vindo(a) à sua página!</p>
+        <a href="{% url 'password_change' %}" class="btn">Alterar senha</a>
+        <a href="{% url 'logout' %}" class="btn">Sair</a>
+        <h1>Localização das Hortas Comunitárias de Belo Horizonte</h1>
+        <div>
+            <p>Confira no mapa abaixo para saber onde estão localizadas as hortas comunitárias mais próximas da sua localidade.</p>
+            <p>Clique nos marcadores para obter mais informações sobre a horta selecionada.</p>
+            <p>Clicando no ícone "Compartilhar", localizado no canto superior direito do mapa, 
+                você pode compartilhar esse mapa para o seu email e depois abri-lo no aplicativo do Google Maps.
+                Em seguida, você pode traçar a rota até a horta comunitária mais próxima de você.    
+            </p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1EdisJ2nvl4KSOiAV3gQgGc0_uut-b7Yw&ehbc=2E312F" width="640" height="480"></iframe>
+        </div>
+    </div>
 {% endblock %}

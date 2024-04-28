@@ -5,20 +5,22 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: helvetica, sans-serif;
+    font-family: 'Muli', sans-serif;
+    background-color: #f5f5dc;
 }
 
 p {
     line-height: 1.8;
+    color: #006400;
 }
 
 a {
     text-decoration: none;
-    color: #026efd;
+    color: #228b22;
 }
 
 a:hover {
-    text-decoration: #026efd;
+    color: #adff2f;
 }
 
 h1,
@@ -29,6 +31,7 @@ h5,
 h6 {
     font-family: 'Muli', sans-serif;
     font-weight: normal;
+    color: #8b4513;
 }
 
 h1 {
@@ -47,7 +50,7 @@ ol {
 
 /* Header */
 #header {
-    padding: 10px 100px;
+    padding: 10px 10px;
     font-size: 20px;
     background: #026efd;
     color: #fff;
@@ -216,4 +219,108 @@ ul.messages li a.close {
 
 .login-form {
     float: left;
+}
+
+/* Dashboard styles*/
+.dashboard-content {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%;
+    position: relative;
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 2px;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #228b22;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #adff2f;
+    color: #fff;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FFB6C1;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFB6C1;
+    border-radius: 20px;
+}
+
+.login-again-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.try-again-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.login-button {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
 }
