@@ -27,3 +27,26 @@ Salvador Cândido da Silva Júnior (Fullstack developer)
 - Como usuário geral, eu gostaria de compartilhar informações e experiências com outros usuários da plataforma.
 
 # Backlog da Sprint
+- Como usuário, eu gostaria de ter uma conta para acessar a plataforma.
+    - Como usuário, gostaria de Criar conta
+        - Formulario Frontend
+        - Backend - POST
+        - Tabela Conta
+    - Como usuário, gostaria de Fazer Login
+        - Formulário Login
+        - Filtro de autenticação Login Frontend
+        - Backend - POST
+    - Como usuário, gostaria de Visualizar minha conta
+        - Formulário FrontEnd
+        - Backend - GET
+    - Como usuário, gostaria de Alterar senha
+        - Formulario alterar senha, a partir do minha conta
+        - Backend alterar senha - POST
+    - Como usuário, gostaria de recuperar senha
+        - Formulario recuperar senha, a partir da tela de login
+        - Backend recuperar senha via email
+
+- Como usuário geral, eu gostaria de descobrir a localização das hortas que existem na minha região.
+    - Como usuário, eu gostaria de saber quais hortas existem próximas da minha localidade
+        - Google Maps customizado que mostra todas as hortas da cidade
+        - Backend enviar o link do mapa via email
